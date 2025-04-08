@@ -71,7 +71,30 @@ Great work! Now that we are familiar with the app and we know it works, let's as
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
    >
    > ```prompt
-   > Hey copilot, how can I create and publish a new Git branch called build-octofit-app?
+   To create and publish a new Git branch called `build-octofit-app`, you can use the following steps:
+
+   1. Open the terminal in your VS Code or development environment.
+   2. Run the following commands:
+
+      ```bash
+      git checkout -b build-octofit-app
+      git push -u origin build-octofit-app
+      ```
+
+      - The first command creates a new branch called `build-octofit-app` and switches to it.
+      - The second command publishes the branch to your remote repository and sets it as the upstream branch.
+
+   3. Verify that the branch has been created and published by checking the branch list in your GitHub repository or using the command:
+
+      ```bash
+      git branch -r
+      ```
+
+   If you're using GitHub Copilot agent mode, you can also ask it to create and publish the branch for you by providing a conversational prompt like:
+
+   > "Hey Copilot, create and publish a new branch called `build-octofit-app`."
+
+   Copilot will guide you through the process and execute the necessary commands.
    > ```
 
 
